@@ -1,0 +1,9 @@
+module mux2to1(
+    input wire a,  // INput 1
+    input wire b,  // Input 2
+    input wire sel,  // select signal
+    output wire y   // output
+    );
+    // Continuous assignment for combinational logic
+    assign y = (sel) ? b:a;   // if sel == 1, y = b otherwise y = a
+endmodule
